@@ -26,9 +26,8 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .ct-emblem{width:48px;height:48px;border:1px solid var(--gold-dim);background:var(--gold-glow);display:flex;align-items:center;justify-content:center;}
 .ct-emblem svg{width:28px;height:28px;}
 .faction-name-block{display:inline-block;}
-.faction-name-old{font-family:'Cinzel',serif;font-size:clamp(11px,1.6vw,15px);color:var(--text-dim);letter-spacing:4px;position:relative;display:inline-block;}
-.faction-name-old::after{content:'';position:absolute;left:-4px;right:-4px;top:50%;height:2px;background:var(--red-bright);transform:translateY(-50%);}
-.faction-name-new{display:block;font-family:'Permanent Marker',cursive;font-size:clamp(14px,2vw,19px);color:var(--gold-light);letter-spacing:2px;margin-top:6px;transform:rotate(-1.5deg);opacity:.9;}
+.faction-name-old{font-family:'Cinzel',serif;font-size:clamp(11px,1.6vw,15px);color:var(--gold-light);letter-spacing:4px;position:relative;display:inline-block;}
+.faction-name-new{display:block;font-family:'Rajdhani',sans-serif;font-size:clamp(12px,1.8vw,16px);color:var(--text-muted);letter-spacing:3px;margin-top:4px;text-transform:uppercase;}
 .hero-eyebrow{font-size:11px;letter-spacing:5px;color:var(--text-dim);text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:16px;}
 .hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--gold-dim);}
 .hero-kicker{font-family:'Cinzel',serif;font-size:clamp(11px,1.8vw,14px);letter-spacing:8px;color:var(--gold-dim);text-transform:uppercase;margin-bottom:12px;}
@@ -90,7 +89,6 @@ strong{color:var(--gold-light);font-weight:600;}
 .mission-text .rv{color:#7aa8d8;}
 .mission-text .ef{color:#d4845a;}
 
-/* History */
 .history-phase{display:flex;gap:24px;padding:28px 0;border-bottom:1px solid var(--navy-border);align-items:flex-start;}
 .history-phase:last-child{border-bottom:none;}
 .history-phase-num{font-family:'Cinzel',serif;font-size:28px;font-weight:700;color:var(--gold-dim);line-height:1;min-width:48px;flex-shrink:0;margin-top:4px;}
@@ -100,7 +98,6 @@ strong{color:var(--gold-light);font-weight:600;}
 .history-phase-desc{font-family:'Rajdhani',sans-serif;font-size:14px;color:var(--text-muted);line-height:1.7;letter-spacing:.3px;}
 .history-stat{display:inline-block;font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;color:var(--gold);border:1px solid var(--gold-dim);padding:4px 12px;background:var(--gold-glow);margin-top:10px;margin-right:8px;}
 
-/* Structure */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin:36px 0;}
 .col-card{padding:32px 28px;position:relative;}
 .col-raven{background:linear-gradient(135deg,#0d1a2a,var(--navy-light));border-top:3px solid var(--raven-dim);transition:border-color .2s;}
@@ -145,7 +142,6 @@ strong{color:var(--gold-light);font-weight:600;}
 .pcs-tier-name{font-family:'Cinzel',serif;font-size:17px;font-weight:600;color:var(--white);margin-bottom:6px;letter-spacing:.5px;}
 .pcs-tier-desc{font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--text-muted);line-height:1.55;letter-spacing:.3px;}
 
-/* Systems */
 .system-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin:36px 0;}
 .system-card{background:var(--navy-light);padding:28px;border-top:2px solid var(--navy-border);transition:border-color .2s;}
 .system-card:hover{border-top-color:var(--gold);}
@@ -163,7 +159,6 @@ strong{color:var(--gold-light);font-weight:600;}
 .threat-item{display:flex;gap:12px;margin-bottom:10px;font-family:'Rajdhani',sans-serif;font-size:14px;color:var(--text-muted);line-height:1.55;}
 .threat-item::before{content:'—';color:var(--text-dim);flex-shrink:0;}
 
-/* Defection */
 .defection-tier{display:flex;gap:20px;background:var(--navy-light);border:1px solid var(--navy-border);border-left:3px solid var(--navy-border);padding:20px 24px;margin-bottom:2px;transition:border-left-color .2s;}
 .defection-tier:hover{border-left-color:var(--gold);}
 .defection-rank{font-family:'Cinzel',serif;font-size:13px;font-weight:700;color:var(--gold);min-width:80px;flex-shrink:0;line-height:1.4;}
@@ -177,14 +172,12 @@ strong{color:var(--gold-light);font-weight:600;}
 .trial-rule{display:flex;gap:12px;margin-bottom:8px;font-family:'Rajdhani',sans-serif;font-size:14px;color:var(--text-muted);line-height:1.55;letter-spacing:.3px;}
 .trial-rule::before{content:'—';color:var(--text-dim);flex-shrink:0;}
 
-/* Events */
 .event-card{background:var(--navy-light);border:1px solid var(--navy-border);padding:28px;margin-bottom:2px;display:flex;gap:20px;align-items:flex-start;}
 .event-icon{width:44px;height:44px;border:1px solid var(--gold-dim);background:var(--gold-glow);display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13px;color:var(--gold);font-weight:700;flex-shrink:0;}
 .event-content{flex:1;}
 .event-name{font-family:'Cinzel',serif;font-size:17px;font-weight:600;color:var(--white);margin-bottom:6px;letter-spacing:.5px;}
 .event-desc{font-family:'Rajdhani',sans-serif;font-size:14px;color:var(--text-muted);line-height:1.65;letter-spacing:.3px;}
 
-/* RP */
 .rp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin:36px 0;}
 .rp-card{background:var(--navy-light);padding:28px;border-top:2px solid var(--navy-border);transition:border-color .2s;}
 .rp-card:hover{border-top-color:var(--gold);}
@@ -192,7 +185,6 @@ strong{color:var(--gold-light);font-weight:600;}
 .rp-name{font-family:'Cinzel',serif;font-size:18px;font-weight:700;color:var(--gold);margin-bottom:12px;letter-spacing:1px;}
 .rp-card p{font-family:'Rajdhani',sans-serif;font-size:14px;color:var(--text-muted);margin:0;line-height:1.65;letter-spacing:.3px;}
 
-/* Recruitment */
 .recruit-steps{margin:36px 0;}
 .recruit-step{display:flex;gap:24px;padding:24px 0;border-bottom:1px solid var(--navy-border);align-items:flex-start;}
 .recruit-step:last-child{border-bottom:none;}
@@ -201,7 +193,6 @@ strong{color:var(--gold-light);font-weight:600;}
 .recruit-title{font-family:'Cinzel',serif;font-size:18px;font-weight:600;color:var(--white);margin-bottom:8px;letter-spacing:.5px;}
 .recruit-desc{font-family:'Rajdhani',sans-serif;font-size:14px;color:var(--text-muted);line-height:1.65;letter-spacing:.3px;}
 
-/* Vote */
 .vote-result{border:1px solid var(--gold-dim);background:var(--navy-light);padding:40px;margin:36px 0;position:relative;}
 .vote-result::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
 .vote-result-title{font-family:'Cinzel',serif;font-size:22px;font-weight:700;color:var(--white);text-align:center;margin-bottom:8px;letter-spacing:2px;}
@@ -219,14 +210,12 @@ strong{color:var(--gold-light);font-weight:600;}
 .vote-stat-label{font-family:'Rajdhani',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);}
 .vote-note{font-family:'Rajdhani',sans-serif;font-size:12px;color:var(--text-dim);text-align:center;margin-top:20px;line-height:1.7;letter-spacing:.3px;}
 
-/* Redevelopment */
 .rdev-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin:36px 0;}
 .rdev-card{background:var(--navy-light);padding:28px;border-top:2px solid var(--navy-border);}
 .rdev-label{font-family:'Rajdhani',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--navy-border);color:var(--gold);}
 .rdev-item{display:flex;gap:10px;margin-bottom:10px;font-family:'Rajdhani',sans-serif;font-size:14px;color:var(--text-muted);line-height:1.55;letter-spacing:.3px;}
 .rdev-item::before{content:'—';color:var(--text-dim);flex-shrink:0;}
 
-/* Culmination locked */
 .culm-lock{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:480px;text-align:center;padding:60px 32px;}
 .culm-lock-icon{width:64px;height:64px;border:1px solid var(--culm-border);background:rgba(139,26,26,.1);display:flex;align-items:center;justify-content:center;margin:0 auto 28px;}
 .culm-lock-icon svg{width:28px;height:28px;stroke:#8b1a1a;fill:none;stroke-width:1.5;}
@@ -243,6 +232,13 @@ strong{color:var(--gold-light);font-weight:600;}
 .closing-big span{color:var(--gold);}
 .closing-big .rv{color:var(--raven);}
 .closing-big .ef{color:var(--enforcer);}
+
+.sec-nav{display:flex;justify-content:space-between;align-items:center;margin-top:56px;padding-top:28px;border-top:1px solid var(--navy-border);}
+.sec-nav-btn{font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);background:none;border:1px solid var(--navy-border);padding:11px 22px;cursor:pointer;transition:color .2s,border-color .2s,background .2s;}
+.sec-nav-btn:hover{color:var(--gold);border-color:var(--gold-dim);background:var(--gold-glow);}
+.sec-nav-btn.culm{color:#6b2020;border-color:#6b2020;}
+.sec-nav-btn.culm:hover{color:#c0392b;border-color:#c0392b;background:rgba(139,32,32,.08);}
+.sec-nav-label{font-family:'Rajdhani',sans-serif;font-size:10px;letter-spacing:2px;color:var(--text-dim);text-transform:uppercase;}
 
 @media(max-width:640px){
   .two-col,.command-grid,.system-grid,.rp-grid,.rdev-grid,.vote-stats{grid-template-columns:1fr;}
@@ -264,7 +260,7 @@ strong{color:var(--gold-light);font-weight:600;}
       <div>
         <div class="faction-name-block">
           <span class="faction-name-old">Cross Termination</span>
-          <span class="faction-name-new">Contested Territory</span>
+          <span class="faction-name-new">The Internal War</span>
         </div>
       </div>
     </div>
@@ -305,7 +301,7 @@ strong{color:var(--gold-light);font-weight:600;}
     <button class="nav-btn" onclick="show('systems',this)">Systems</button>
     <button class="nav-btn" onclick="show('defection',this)">Defection</button>
     <button class="nav-btn" onclick="show('events',this)">Events</button>
-    <button class="nav-btn" onclick="show('rp',this)">RP & Lore</button>
+    <button class="nav-btn" onclick="show('rp',this)">RP &amp; Lore</button>
     <button class="nav-btn" onclick="show('recruitment',this)">Recruitment</button>
     <button class="nav-btn" onclick="show('vote',this)">The Vote</button>
     <button class="nav-btn" onclick="show('next',this)">What's Next</button>
@@ -345,9 +341,9 @@ strong{color:var(--gold-light);font-weight:600;}
       <div class="history-phase-content">
         <div class="history-phase-era">Growth Era</div>
         <div class="history-phase-title">From Scrappy to Institutional</div>
-        <div class="history-phase-desc">CT grew. What started as a reactive enforcement unit evolved into something more structured — executive roles, company hierarchies, training pipelines, alliance frameworks, a democratic succession plan. The organization built itself around a mission, and that gave it staying power. Over time CT became one of the more recognizable factions in NBTF — not through self-declaration, but through presence. People knew the name. Whether that reputation was earned or just loudly accumulated is for others to judge. Either way, CT kept showing up. Each confirmed report meant deploying Ravens and Enforcers across both teams, racing to reset the core before it exploded while holding off Facility and Rebel MBRs at the same time. 119 operations won. 23 lost — usually when the damage was too far gone or the pressure too heavy to hold.</div>
+        <div class="history-phase-desc">CT grew. What started as a reactive enforcement unit evolved into something more structured — executive roles, company hierarchies, training pipelines, alliance frameworks, a democratic succession plan. The organization built itself around a mission, and that gave it staying power. Over time CT became one of the more recognizable factions in NBTF — not through self-declaration, but through presence. People knew the name. Each confirmed report meant deploying Ravens and Enforcers across both teams, racing to reset the core before it exploded while holding off Facility and Rebel members at the same time. Before official tracking began CT ran operations on nothing but manual callouts and a Dyno ping — 105 wins and 30 losses across that early era. Once CTBOT launched on February 6, 2025 and tracking became structured, CT added another 119 wins and 23 losses. All-time: 224 wins, 53 losses, 80.9% win rate.</div>
         <div class="history-stat">Peaked at 250+ members</div>
-        <div class="history-stat">119W · 23L — Core Recovery Record</div>
+        <div class="history-stat">224W · 53L — All-Time Core Recovery Record</div>
       </div>
     </div>
 
@@ -410,7 +406,7 @@ strong{color:var(--gold-light);font-weight:600;}
     <div style="margin-bottom:20px;">
       <div class="faction-name-block">
         <span class="faction-name-old" style="font-size:13px;letter-spacing:3px;">Cross Termination</span>
-        <span class="faction-name-new" style="font-size:16px;">Contested Territory</span>
+        <span class="faction-name-new" style="font-size:13px;">The Internal War</span>
       </div>
     </div>
     <p>The old mission was one sentence: eradicate cross-teaming in NBTF. The new mission carries the same weight — and announces what CT is becoming without apology.</p>
@@ -421,7 +417,7 @@ strong{color:var(--gold-light);font-weight:600;}
     <p>The enemy is no longer external. <strong>The enemy is each other.</strong> Ravens and Enforcers exist to outfight, outmaneuver, and outlast the opposing company in perpetual honorable conflict. The goal is not final victory — it is dominance. Season by season, event by event, the standings tell the story of who CT's greatest warriors are.</p>
     <div class="callout">
       <div class="callout-label">On The Name</div>
-      <p>The initials CT stay. The proposed new full name is <strong>Contested Territory</strong> — two armies fighting for dominance, the battlefield being the faction itself. This fits the Internal War cleanly and preserves CT's identity without erasing its history. The War Council will hold a formal vote on this as part of the redevelopment program.</p>
+      <p>Cross Termination stays. The name carries two years of history, a 224-win record, and a reputation built through real operations. The era gets its own identity through the subtitle — <strong>Cross Termination: The Internal War.</strong> The initials don't change. The institution doesn't change. The war does.</p>
     </div>
     <div class="sec-nav"><div><button class="sec-nav-btn" onclick="navTo(1)">&#8592; The New Era</button></div><span class="sec-nav-label">3 / 12</span><div><button class="sec-nav-btn" onclick="navTo(3)">Structure &#8594;</button></div></div>
   </div>
@@ -485,7 +481,7 @@ strong{color:var(--gold-light);font-weight:600;}
     <div class="two-col">
       <div class="col-card col-raven">
         <div class="col-label">Raven Company — Facility</div>
-        <div class="col-title">Intelligence & Precision</div>
+        <div class="col-title">Intelligence &amp; Precision</div>
         <div class="rank-item"><div class="rank-num">R5</div><div class="rank-name">Albatross</div><div class="rank-desc">Living legend</div></div>
         <div class="rank-item"><div class="rank-num">R4</div><div class="rank-name">Vulture</div><div class="rank-desc">Seasoned operative</div></div>
         <div class="rank-item"><div class="rank-num">R3</div><div class="rank-name">Eagle</div><div class="rank-desc">Elite member</div></div>
@@ -494,7 +490,7 @@ strong{color:var(--gold-light);font-weight:600;}
       </div>
       <div class="col-card col-enforcer">
         <div class="col-label">Enforcer Company — Rebel</div>
-        <div class="col-title">Brute Force & Aggression</div>
+        <div class="col-title">Brute Force &amp; Aggression</div>
         <div class="rank-item"><div class="rank-num">R5</div><div class="rank-name">Dreadbane</div><div class="rank-desc">Transcended warrior</div></div>
         <div class="rank-item"><div class="rank-num">R4</div><div class="rank-name">Conqueror</div><div class="rank-desc">Decisive veteran</div></div>
         <div class="rank-item"><div class="rank-num">R3</div><div class="rank-name">Deathbringer</div><div class="rank-desc">Elite member</div></div>
@@ -509,35 +505,49 @@ strong{color:var(--gold-light);font-weight:600;}
   <div id="systems" class="section">
     <div class="sec-eyebrow"><div class="sec-num">V</div><div class="sec-line"></div></div>
     <div class="sec-title">Public <span>Systems</span></div>
-    <p>The Internal War introduces public-facing mechanics that connect the broader NBTF community to CT's conflict — making CT visible, relevant, and worth engaging with whether you're a member or not.</p>
+    <p>The Internal War introduces three operational systems through CTBOT — two open to the broader NBTF community, one exclusive to the Internal War between Raven and Enforcer. All three run independently. All payouts are handled manually by FPCS+.</p>
 
-    <div class="system-grid">
+    <div class="system-grid" style="grid-template-columns:1fr;">
+
       <div class="system-card">
         <div class="system-num">System 01</div>
-        <div class="system-name">For-Hire</div>
-        <div class="system-tag">Public Reinforcement</div>
-        <p>Any NBTF player can request CT backup through CTBOT. Need numbers for a fight, backup during a skirmish, or bodies for a push? Submit the request — available Ravens or Enforcers respond based on which side fits your needs. Mission complete earns the responding CT member CTC. Low commitment, real impact. You don't have to be in CT to call on CT.</p>
+        <div class="system-name">Mercenary Services</div>
+        <div class="system-tag">Open to All NBTF Players</div>
+        <p>Any NBTF player can request CT backup through CTBOT. Need numbers for a fight, backup during a skirmish, bodies for a push, help with a raid, building takeover, hacking, code finding, or core operations? Submit the request — opted-in Ravens and Enforcers respond at their own discretion. Mission complete earns the responding CT member CTC. Low commitment, real impact. You don't have to be in CT to call on CT.</p>
+        <div class="rule-item">Requests cannot name a specific faction as a target — location and objective only</div>
+        <div class="rule-item">Crossteamer response preserved and integrated — still active, no longer the primary function</div>
+        <div class="rule-item">A thread is created under the ping for further coordination</div>
       </div>
+
       <div class="system-card">
         <div class="system-num">System 02</div>
-        <div class="system-name">Hitman</div>
-        <div class="system-tag">Contract Kills</div>
-        <p>Any NBTF player — including CT members — can place a hit on a target through CTBOT. Submit the target's name and a CTC bounty. A Raven or Enforcer takes the contract, hunts the target, and submits proof. Bounty paid on confirmed kill. Payout scales with the target's rank — the higher the target, the bigger the reward.</p>
-        <div class="rule-item">One active hit per target at a time</div>
-        <div class="rule-item">48-hour cooldown before another hit can be placed on the same person after completion</div>
+        <div class="system-name">Public Hitman System</div>
+        <div class="system-tag">Civilian+ · Any CT Member Can Claim</div>
+        <p>Any CT member at Civilian rank or above can place a hit on any target — inside or outside the faction. Submit the target through CTBOT. Any CT member can claim and fulfill the contract. Proof of kill is a screenshot, submitted for FPCS+ review and payout. Contracts expire after 48 hours if unfulfilled.</p>
+        <div class="rule-item">Hit on a non-CT target — any CT member can claim, no duel mechanics</div>
+        <div class="rule-item">Hit on a CT member — auto-routes to IHTMS mechanics, opposing company claims only</div>
+        <div class="rule-item">Same-company hits blocked — use IHTMS instead</div>
+        <div class="rule-item">Contractor identity anonymous — target can only learn it from the hitman directly</div>
+        <div class="rule-item">48-hour contract timer — auto-expires if unfulfilled, no refunds</div>
       </div>
+
       <div class="system-card">
         <div class="system-num">System 03</div>
-        <div class="system-name">War Bank</div>
-        <div class="system-tag">Central CTC Treasury</div>
-        <p>One central CTC pool governed neutrally by the War Council. Both companies draw from it for for-hire payouts, hitman contracts, and event rewards. Neither company can access it unilaterally. Winning official war events earns the victorious company a larger share of that cycle's CTC distribution — merit-based stakes, neutrally managed.</p>
+        <div class="system-name">IHTMS — Internal Hitman System</div>
+        <div class="system-tag">Delegator+ · Internal War Exclusive</div>
+        <p>The Internal War's most politically charged mechanic. Delegator-ranked company members and above can place anonymous contracts on opposing company members through CTBOT. The opposing company claims and fulfills the hit. What makes it dangerous — the target can fight back.</p>
+        <div class="rule-item">Hit on a Raven — only Enforcers can claim. Hit on an Enforcer — only Ravens can claim</div>
+        <div class="rule-item">Same-company hits permitted at Delegator+ — if contractor is identified, a Defection Trial follows</div>
+        <div class="rule-item">Contractor identity fully anonymous — CTBOT never reveals it. Target can only learn it from the hitman</div>
+        <div class="rule-item">48-hour contract timer — auto-expires if unfulfilled</div>
+        <div class="rule-item">Proof of kill is a screenshot, submitted for FPCS+ manual review and payout</div>
       </div>
-      <div class="system-card">
-        <div class="system-num">System 04</div>
-        <div class="system-name">War Standings</div>
-        <div class="system-tag">Season Score Tracking</div>
-        <p>A live running score tracking both companies across all official Internal War engagements — battles, sanctioned RP conflicts, and war events. Updated publicly after every official result. Seasons reset on a scheduled cycle with all records preserved. Simple, visible, and honest: the standings tell you exactly which company is winning right now.</p>
-      </div>
+
+    </div>
+
+    <div class="callout" style="margin-top:8px;">
+      <div class="callout-label">Duel Exemption — IHTMS Only</div>
+      <p>When a hit is active on a CT member through IHTMS, the target has two options beyond accepting their fate. They can invoke a <strong>Duel Exemption</strong> — challenging the contractor directly to a 1v1. The contractor must accept, produce a champion, or withdraw the hit. Or they can escalate to a <strong>Squad Duel</strong> — bringing up to 3 company members into a full 4v4 skirmish. The contractor must match the squad size or withdraw. Either way, the duel resolves the contract entirely — win or lose, the hitman is paid out and the contract closes. If the hit is fulfilled before a duel is invoked, the contract is complete with no appeal.</p>
     </div>
 
     <div class="threat-clause">
@@ -654,7 +664,7 @@ strong{color:var(--gold-light);font-weight:600;}
       <div class="event-icon">PS</div>
       <div class="event-content">
         <div class="event-name">Public Server Events</div>
-        <div class="event-desc">CT takes the Internal War live — directly to the NBTF server population. Both companies deploy on public servers and wage their conflict in front of the entire game's community. Open for anyone watching to see CT in action, understand the conflict, and find out how to get involved. The Internal War is not just a CT story. It plays out where everyone can witness it.</div>
+        <div class="event-desc">CT takes the Internal War live — directly to the NBTF server population. Both companies deploy on public servers and wage their conflict in front of the entire game's community. Open for anyone watching to see CT in action, understand the conflict, and find out how to get involved.</div>
       </div>
     </div>
     <div class="event-card">
@@ -689,9 +699,8 @@ strong{color:var(--gold-light);font-weight:600;}
   <!-- RP & LORE -->
   <div id="rp" class="section">
     <div class="sec-eyebrow"><div class="sec-num">VIII</div><div class="sec-line"></div></div>
-    <div class="sec-title">RP, <span>Lore</span> & Storytelling</div>
+    <div class="sec-title">RP, <span>Lore</span> &amp; Storytelling</div>
     <p>The Internal War comes with a living narrative — and that narrative is one of CT's most valuable new assets. RP and lore are not decoration. They are a necessary component that keeps the Internal War coherent, immersive, and worth following beyond individual events.</p>
-    <p>CT is building this as it goes. The foundation is strong — the history, the companies, the rivalry, the conflict. The storytelling layer develops with it.</p>
 
     <div class="rp-grid">
       <div class="rp-card">
@@ -764,7 +773,6 @@ strong{color:var(--gold-light);font-weight:600;}
     <div class="vote-result">
       <div class="vote-result-title">The Next Era of CT</div>
       <div class="vote-result-sub">Poll Closed · March 30, 2026 · 23:30 EST · Final Results</div>
-
       <div class="vote-bars">
         <div class="vote-bar-row">
           <div class="vote-bar-label">
@@ -781,22 +789,11 @@ strong{color:var(--gold-light);font-weight:600;}
           <div class="vote-bar-track"><div class="vote-bar-fill vb-p3" style="width:39%;"></div></div>
         </div>
       </div>
-
       <div class="vote-stats">
-        <div class="vote-stat">
-          <div class="vote-stat-num">28</div>
-          <div class="vote-stat-label">Total Public Votes</div>
-        </div>
-        <div class="vote-stat">
-          <div class="vote-stat-num" style="color:var(--gold);">4–1</div>
-          <div class="vote-stat-label">Executive Vote</div>
-        </div>
-        <div class="vote-stat">
-          <div class="vote-stat-num" style="color:#4a9e6a;">PASSED</div>
-          <div class="vote-stat-label">Poll Status</div>
-        </div>
+        <div class="vote-stat"><div class="vote-stat-num">28</div><div class="vote-stat-label">Total Public Votes</div></div>
+        <div class="vote-stat"><div class="vote-stat-num" style="color:var(--gold);">4–1</div><div class="vote-stat-label">Executive Vote</div></div>
+        <div class="vote-stat"><div class="vote-stat-num" style="color:#4a9e6a;">PASSED</div><div class="vote-stat-label">Poll Status</div></div>
       </div>
-
       <div class="vote-note">
         Poll closed March 30, 2026 at 23:30 EST. 28 total votes cast.<br>
         Executive vote finalized 4–1. Internal War passed on both counts independently.<br>
@@ -832,8 +829,7 @@ strong{color:var(--gold-light);font-weight:600;}
         <div class="rdev-item">War Council formally constituted — neutrality declared publicly</div>
         <div class="rdev-item">Commanders appointed or elected for both companies</div>
         <div class="rdev-item">Czar Pacesetters confirmed for both companies</div>
-        <div class="rdev-item">War Standings board created and published</div>
-        <div class="rdev-item">CTBOT updated — for-hire and hitman commands activated</div>
+        <div class="rdev-item">CTBOT updated — Mercenary Services, Public Hitman, and IHTMS commands activated</div>
         <div class="rdev-item">First official war event scheduled and announced</div>
       </div>
     </div>
@@ -868,14 +864,6 @@ strong{color:var(--gold-light);font-weight:600;}
 
 </div>
 
-<style>
-.sec-nav{display:flex;justify-content:space-between;align-items:center;margin-top:56px;padding-top:28px;border-top:1px solid var(--navy-border);}
-.sec-nav-btn{font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);background:none;border:1px solid var(--navy-border);padding:11px 22px;cursor:pointer;transition:color .2s,border-color .2s,background .2s;}
-.sec-nav-btn:hover{color:var(--gold);border-color:var(--gold-dim);background:var(--gold-glow);}
-.sec-nav-btn.culm{color:#6b2020;border-color:#6b2020;}
-.sec-nav-btn.culm:hover{color:#c0392b;border-color:#c0392b;background:rgba(139,32,32,.08);}
-.sec-nav-label{font-family:'Rajdhani',sans-serif;font-size:10px;letter-spacing:2px;color:var(--text-dim);text-transform:uppercase;}
-</style>
 <script>
 const NAV_IDS=['history','origin','mission','structure','systems','defection','events','rp','recruitment','vote','next','culmination'];
 function navTo(i){
